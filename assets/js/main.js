@@ -158,13 +158,15 @@
     });
   }
 
-  // Contact form
+  // Contact form: static HTML has no mail backend, so open the visitor's email app.
   const f = $('#contactForm'), msg = $('#formMsg');
-  if (f && msg) f.addEventListener('submit', async e => {
-    e.preventDefault(); msg.textContent = 'Sending...';
-    try {
-      const r = await fetch(f.action, { method: 'POST', body: new FormData(f) }), j = await r.json();
-      msg.textContent = j.message; msg.style.color = j.ok ? '#006B4A' : '#b00020'; if (j.ok) f.reset();
-    } catch (_) { msg.textContent = 'Something went wrong. Please try again.'; msg.style.color = '#b00020'; }
+  if (f && msg) f.addEventListener('submit', e => {
+    e.preventDefault();
+    const fields = new FormData(f);
+    const subject = encodeURIComponent(fields.get('subject') || 'Portfolio inquiry');
+    const body = encodeURIComponent(`Name: ${fields.get('name')}\nEmail: ${fields.get('email')}\n\n${fields.get('message')}`);
+    window.location.href = `${f.action}?subject=${subject}&body=${body}`;
+    msg.textContent = 'Your email app is opening with your message.';
+    msg.style.color = '#006B4A';
   });
 })();

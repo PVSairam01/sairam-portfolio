@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/s-favicon.png">
+  <title>Sairam Portfolio</title>
+  <meta name="description" content="Portfolio of P. Venkata Sairam – Website Developer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="portfolio-loader" id="portfolioLoader" role="status" aria-label="Loading Sairam Portfolio">
+  <div class="portfolio-loader__content">
+    <p class="portfolio-loader__eyebrow">Welcome to</p>
+    <h1><span>SAIRAM</span><strong>PORTFOLIO</strong></h1>
+    <span class="portfolio-loader__line" aria-hidden="true"><i></i></span>
+    <span class="portfolio-loader__caption">Design · Develop · Create</span>
+  </div>
+</div>
+
+<button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+
+<!-- SIDEBAR -->
+<header id="sidebar">
+  <div class="profile">
+    <label class="avatar-upload" for="profileImage" title="Click to choose a profile photo"><span class="avatar" id="avatarPreview"><span class="avatar-initials">PVS</span></span><input id="profileImage" type="file" accept="image/*" hidden></label>
+    <h1>P. Venkata Sairam</h1>
+    <div class="socials">
+      <a href="https://linkedin.com/in/patchipala-venkata-sairam-5487301a3" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://instagram.com/art_is_my_first_love" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/919390717011" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="mailto:sairampachipala00@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+  <nav id="navmenu">
+    <a href="#hero" class="active"><i class="bi bi-house"></i> Home</a>
+    <a href="#about"><i class="bi bi-person"></i> About</a>
+    <a href="#resume"><i class="bi bi-file-earmark-text"></i> Resume</a>
+    <a href="#projects"><i class="bi bi-images"></i> Projects</a>
+    <a href="#services"><i class="bi bi-hdd-stack"></i> Services</a>
+    <a href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+    <a href="#dashboard"><i class="bi bi-bar-chart-line"></i> Dashboard</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <canvas id="particles"></canvas>
+  <div class="container position-relative" data-aos="fade-in">
+    <p class="eyebrow">Hello, I'm</p>
+    <h2>P. Venkata Sairam</h2>
+    <p class="typed-line">I'm a <span id="typed" data-items='["Website Developer","Java Developer","UI\/UX Enthusiast","Pencil Artist"]'></span></p>
+    <div class="mt-4 d-flex gap-3 flex-wrap">
+      <a href="#projects" class="btn-gold">View Projects <i class="bi bi-arrow-right"></i></a>
+      <a href="#contact" class="btn-outline-gold">Let's Talk</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>About</h2><p>Computer Science graduate and Website Developer Intern at Bhavi Creations Pvt Ltd. I build responsive websites, love clean UI/UX, and enjoy turning ideas into working products with Python, Java, Angular, Node.js and Django.</p></div>
+    <div class="row gy-4 align-items-center">
+      <div class="col-md-4" data-aos="fade-right"><div class="about-card"><i class="bi bi-code-square"></i><span>Website Developer</span></div></div>
+      <div class="col-md-8 content" data-aos="fade-left">
+        <h3>UI/UX Designer & Web Developer.</h3>
+        <div class="row">
+          <ul class="col-lg-6 info">
+            <li><i class="bi bi-chevron-right"></i><strong>Email:</strong> sairampachipala00@gmail.com</li>
+            <li><i class="bi bi-chevron-right"></i><strong>Phone:</strong> +91 9390717011</li>
+            <li><i class="bi bi-chevron-right"></i><strong>City:</strong> Kakinada, Andhra Pradesh</li>
+          </ul>
+          <ul class="col-lg-6 info">
+            <li><i class="bi bi-chevron-right"></i><strong>Degree:</strong> B.Tech (CSE)</li>
+            <li><i class="bi bi-chevron-right"></i><strong>Hobbies:</strong> Pencil Art, Cricket, Anime, Gaming</li>
+            <li><i class="bi bi-chevron-right"></i><strong>Age:</strong> 26</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3 mt-4 stats">
+              <div class="col-6 col-lg-3" data-aos="zoom-in"><div class="stat"><b data-count="5+">5+</b><span>Months Internship</span></div></div>
+              <div class="col-6 col-lg-3" data-aos="zoom-in"><div class="stat"><b data-count="3">3</b><span>Major Projects</span></div></div>
+              <div class="col-6 col-lg-3" data-aos="zoom-in"><div class="stat"><b data-count="8.03">8.03</b><span>B.Tech CGPA</span></div></div>
+              <div class="col-6 col-lg-3" data-aos="zoom-in"><div class="stat"><b data-count="8+">8+</b><span>Certifications</span></div></div>
+          </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Skills</h2><p>Languages, databases and tools I work with.</p></div>
+    <div class="row gx-5 gy-3">
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>Python</span><em>50%</em></div>
+          <div class="bar"><i data-w="50"></i></div></div>
+      </div>
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>Java</span><em>70%</em></div>
+          <div class="bar"><i data-w="70"></i></div></div>
+      </div>
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>C</span><em>70%</em></div>
+          <div class="bar"><i data-w="70"></i></div></div>
+      </div>
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>MySQL</span><em>75%</em></div>
+          <div class="bar"><i data-w="75"></i></div></div>
+      </div>
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>HTML / CSS / Bootstrap</span><em>80%</em></div>
+          <div class="bar"><i data-w="80"></i></div></div>
+      </div>
+            <div class="col-md-6" data-aos="fade-up">
+        <div class="skill"><div class="d-flex justify-content-between"><span>Linux & Windows</span><em>70%</em></div>
+          <div class="bar"><i data-w="70"></i></div></div>
+      </div>
+          </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Resume</h2><p>My experience and education.</p></div>
+    <div class="row gy-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Experience</h3>
+                <div class="resume-item">
+          <h4>Website Developer Intern</h4><h5>8 Jun 2026 – 7 Nov 2026</h5>
+          <p><em>Bhavi Creations Pvt Ltd, Kakinada</em></p>
+          <ul><li>Worked on website design and development projects for the company and its clients.</li><li>Built and updated web pages and created responsive layouts.</li><li>Tested and maintained websites; completed all assigned tasks with dedication.</li></ul>
+        </div>
+                <h3 class="resume-title mt-4">Summary</h3>
+        <div class="resume-item"><h4>P. Venkata Sairam</h4>
+          <p><em>Passionate about building clean, responsive websites and learning new technologies.</em></p>
+          <ul><li>Kakinada, Andhra Pradesh</li><li>+91 9390717011</li><li>sairampachipala00@gmail.com</li></ul></div>
+        <h3 class="resume-title mt-4">Achievements</h3>
+        <div class="resume-item"><ul><li>My Anatomy - National Competence Evaluation Test: Score - 78/100, placed in the Top 2% of test takers.</li></ul></div>
+        <h3 class="resume-title mt-4">Hobbies and Interests</h3>
+        <div class="resume-item"><ul>
+          <li>Pencil Art: Instagram Art Account – <a href="https://instagram.com/art_is_my_first_love" target="_blank" rel="noopener">https://instagram.com/art_is_my_first_love</a></li>
+          <li>Cricket: Occasionally.</li><li>Watching Anime: One Punch Man, Naruto.</li><li>Gaming: Free Fire Player.</li>        </ul></div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Education</h3>
+                <div class="resume-item"><h4>BTech – Computer Science & Engineering</h4><h5>Aug 2019 – Jun 2023</h5><p><em>Pragati Engineering College, Surampalem</em></p><p>CGPA: 8.03</p></div>
+                <div class="resume-item"><h4>Intermediate – MPC</h4><h5>Jun 2017 – Apr 2019</h5><p><em>Narayana Junior College, Kakinada</em></p><p>CGPA: 8.84</p></div>
+                <div class="resume-item"><h4>10th – SSC</h4><h5>Jun 2016 – Apr 2017</h5><p><em>Sri Chaitanya Techno School, Kakinada</em></p><p>CGPA: 9.3</p></div>
+                <h3 class="resume-title mt-4">Certifications & Publications</h3>
+        <div class="resume-item"><ul><li>Paper on Wireless Networks – IJSRED, Vol 5 Issue 1 (2022)</li><li>NPTEL – Data Analytics with Python</li><li>Google UX Design Professional Certificate – Coursera</li><li>Cybersecurity Introduction & Essentials – Cisco</li><li>Basics of Linux & Shell Scripting – APSSDC</li><li>Minecraft: World & Game Management – Microsoft Educator Center</li><li>Starting with Python Programming – Certificate by Microsoft Student Partners (2020)</li><li>Effective Coding in Python – Certificate by Microsoft Learn Student Ambassadors (7/11/2021)</li><li>Google Cloud Career Readiness Associate Cloud Engineer Track – Certificate by Google (Issued on 21 May 2023)</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Projects</h2><p>Selected academic and professional work.</p></div>
+    <div class="filters" data-aos="fade-up">
+      <button class="active" data-f="*">All</button><button data-f="major">Major</button>
+      <button data-f="web">Web</button><button data-f="core">Core Java</button><button data-f="design">Design</button>
+    </div>
+    <div class="row g-4" id="projGrid">
+            <div class="col-md-6 col-xl-4 proj" data-cat="major" data-aos="zoom-in">
+        <div class="proj-card"><span class="tag">Python · Django</span><h4>Detecting Suspicious File Migration or Replication in Cloud</h4><p>File deduplication with authentication tags using the computational Diffie-Hellman problem; storage deduplication and integrity auditing run together.</p></div>
+      </div>
+            <div class="col-md-6 col-xl-4 proj" data-cat="web" data-aos="zoom-in">
+        <div class="proj-card"><span class="tag">Angular · Node.js · MongoDB</span><h4>Mentor Point Website</h4><p>Dynamic content, OpenAI API integration, performance optimisation and a fully responsive UI.</p></div>
+      </div>
+            <div class="col-md-6 col-xl-4 proj" data-cat="core" data-aos="zoom-in">
+        <div class="proj-card"><span class="tag">Core Java</span><h4>Vehicle Rental System</h4><p>Command-file based booking system using the factory pattern to inject vehicle-selection strategies at runtime.</p></div>
+      </div>
+            <div class="col-md-6 col-xl-4 proj" data-cat="design" data-aos="zoom-in">
+        <div class="proj-card"><span class="tag">Figma · UX Research</span><h4>Google UX Design Certificate</h4><p>User research, personas, journey mapping, wireframing, prototyping and usability testing.</p></div>
+      </div>
+          </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Services</h2><p>Tap a service to chat with me on WhatsApp.</p></div>
+    <div class="row g-4">
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Website" target="_blank">
+          <i class="bi bi-window-sidebar"></i><h4>Website</h4><p>Design & Development</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Mobile+App" target="_blank">
+          <i class="bi bi-phone"></i><h4>Mobile App</h4><p>Modern Applications</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Software" target="_blank">
+          <i class="bi bi-code-slash"></i><h4>Software</h4><p>Custom Solutions</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Social+Media" target="_blank">
+          <i class="bi bi-instagram"></i><h4>Social Media</h4><p>Content & Growth</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+SEO" target="_blank">
+          <i class="bi bi-graph-up-arrow"></i><h4>SEO</h4><p>Search Visibility</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Graphic+Design" target="_blank">
+          <i class="bi bi-vector-pen"></i><h4>Graphic Design</h4><p>Creative Visuals</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Video+Editing" target="_blank">
+          <i class="bi bi-play-btn"></i><h4>Video Editing</h4><p>Reels & Videos</p></a>
+      </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+        <a class="service" href="https://wa.me/919390717011?text=Hi+Sairam%2C+I+am+interested+in+Branding" target="_blank">
+          <i class="bi bi-gem"></i><h4>Branding</h4><p>Identity & Strategy</p></a>
+      </div>
+          </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Contact</h2><p>Have a project or opportunity? Let's talk.</p></div>
+    <div class="row gy-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="info-box"><i class="bi bi-geo-alt"></i><div><h5>Address</h5><p>Kakinada, Andhra Pradesh</p></div></div>
+        <div class="info-box"><i class="bi bi-telephone"></i><div><h5>Call</h5><p>+91 9390717011</p></div></div>
+        <div class="info-box"><i class="bi bi-envelope"></i><div><h5>Email</h5><p>sairampachipala00@gmail.com</p></div></div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="contactForm" class="contact-form" action="mailto:sairampachipala00@gmail.com" method="post">
+          <div class="row g-3">
+            <div class="col-md-6"><input class="form-control" name="name" placeholder="Your Name" required></div>
+            <div class="col-md-6"><input class="form-control" type="email" name="email" placeholder="Your Email" required></div>
+            <div class="col-12"><input class="form-control" name="subject" placeholder="Subject" required></div>
+            <div class="col-12"><textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea></div>
+            <div class="col-12"><button class="btn-gold" type="submit">Send Message <i class="bi bi-send"></i></button>
+              <span id="formMsg" class="ms-3"></span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFORMANCE DASHBOARD -->
+<section id="dashboard" class="section dashboard-section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Performance Dashboard</h2><p>A quick view of my skills, projects and professional journey.</p></div>
+    <div class="dashboard-grid">
+      <article class="dashboard-card"><div class="dashboard-card-head"><i class="bi bi-bar-chart-line-fill"></i><h3>Skill Overview</h3></div>
+        <div class="dashboard-skill"><div><span>Python</span><b>50%</b></div><div class="dashboard-track"><i style="--level:50%"></i></div></div><div class="dashboard-skill"><div><span>Java</span><b>70%</b></div><div class="dashboard-track"><i style="--level:70%"></i></div></div><div class="dashboard-skill"><div><span>C</span><b>70%</b></div><div class="dashboard-track"><i style="--level:70%"></i></div></div><div class="dashboard-skill"><div><span>MySQL</span><b>75%</b></div><div class="dashboard-track"><i style="--level:75%"></i></div></div><div class="dashboard-skill"><div><span>HTML / CSS / Bootstrap</span><b>80%</b></div><div class="dashboard-track"><i style="--level:80%"></i></div></div><div class="dashboard-skill"><div><span>Linux & Windows</span><b>70%</b></div><div class="dashboard-track"><i style="--level:70%"></i></div></div>      </article>
+      <article class="dashboard-card dashboard-summary"><div class="dashboard-card-head"><i class="bi bi-trophy-fill"></i><h3>Career Snapshot</h3></div>
+        <div class="dashboard-metrics"><div><b>5+</b><span>Months internship</span></div><div><b>4</b><span>Featured projects</span></div><div><b>8.03</b><span>B.Tech CGPA</span></div><div><b>8+</b><span>Certifications</span></div></div>
+        <p>Focused on responsive web experiences, useful products and continuous learning.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">© 2026 <strong>P. Venkata Sairam</strong> · Built with <i class="bi bi-heart-fill"></i></footer>
+</main>
+
+<!-- FLOATING WHATSAPP + CHATBOT -->
+<div class="float-wrap">
+  <a class="wa-btn" href="https://wa.me/919390717011" target="_blank" aria-label="WhatsApp"><span class="wa-label">Chat with us</span><i class="bi bi-whatsapp"></i></a>
+  <button class="bot-btn" id="botBtn" aria-label="Chat"><i class="bi bi-chat-dots-fill"></i><b class="dot"></b></button>
+</div>
+
+<div class="chatbot" id="chatbot">
+  <div class="cb-head">
+    <div class="cb-logo"><i class="bi bi-stars"></i></div>
+    <div><h6>P. Venkata Sairam – Assistant</h6><small><i class="live"></i> Online • Creative &amp; Digital Solutions</small></div>
+  </div>
+  <div class="cb-body">
+    <div class="cb-msg">Hi 👋 Welcome! Choose a service to see what I can build for you.</div>
+    <p class="cb-q">Choose a service</p>
+    <div class="cb-grid">
+              <button class="cb-opt on" data-svc="Website"><i class="bi bi-window-sidebar"></i><span><b>Website</b><small>Design & Development</small></span></button>
+              <button class="cb-opt " data-svc="Mobile App"><i class="bi bi-phone"></i><span><b>Mobile App</b><small>Modern Applications</small></span></button>
+              <button class="cb-opt " data-svc="Software"><i class="bi bi-code-slash"></i><span><b>Software</b><small>Custom Solutions</small></span></button>
+              <button class="cb-opt " data-svc="Social Media"><i class="bi bi-instagram"></i><span><b>Social Media</b><small>Content & Growth</small></span></button>
+              <button class="cb-opt " data-svc="SEO"><i class="bi bi-graph-up-arrow"></i><span><b>SEO</b><small>Search Visibility</small></span></button>
+              <button class="cb-opt " data-svc="Graphic Design"><i class="bi bi-vector-pen"></i><span><b>Graphic Design</b><small>Creative Visuals</small></span></button>
+              <button class="cb-opt " data-svc="Video Editing"><i class="bi bi-play-btn"></i><span><b>Video Editing</b><small>Reels & Videos</small></span></button>
+              <button class="cb-opt " data-svc="Branding"><i class="bi bi-gem"></i><span><b>Branding</b><small>Identity & Strategy</small></span></button>
+          </div>
+    <div class="cb-detail" id="cbDetail" aria-live="polite"><p class="cb-q">How can I help you today?</p><p class="cb-detail-hint">Select a service above to see details.</p></div>
+  </div>
+  <div class="cb-foot">
+    <a href="tel:+919390717011" class="cb-call"><i class="bi bi-telephone-fill"></i> Call Us</a>
+    <a href="mailto:sairampachipala00@gmail.com" class="cb-mail"><i class="bi bi-envelope-fill"></i> Mail Us</a>
+  </div>
+</div>
+
+<button id="toTop" aria-label="Top"><i class="bi bi-arrow-up-short"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>window.WA = "919390717011";</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
