@@ -171,6 +171,106 @@ main{margin-left:300px}
   .profile { margin: 1rem 0 1.25rem; }
   #navmenu a { padding: .7rem 1rem; }
 }
+@media (min-width: 992px) and (max-width: 1200px), (min-width: 1400px) {
+  #sidebar {
+    position: fixed;
+    inset: 0 0 auto;
+    display: block;
+    width: 100%;
+    height: 132px;
+    padding: 0;
+    overflow: visible;
+    transform: none;
+    border-right: 0;
+    border-bottom: 1px solid rgba(232,201,120,.3);
+    background: linear-gradient(180deg,rgba(0,24,17,.55) 0 40px,transparent 40px),linear-gradient(180deg,var(--emerald),var(--emerald-dark));
+  }
+  #sidebar::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: max-content;
+    padding: 0 4%;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: .82rem;
+    content: "📍 Kakinada, Andhra Pradesh　 ☎ +91 9390717011　 ✉ sairampachipala00@gmail.com";
+    white-space: nowrap;
+    animation: header-info-marquee 32s linear infinite;
+  }
+  .profile {
+    position: absolute;
+    left: 4%;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 0;
+  }
+  .avatar-upload { display: block; margin: 0; }
+  #sidebar .avatar-upload .avatar, #sidebar .avatar {
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  #sidebar .avatar img, #sidebar .avatar-has-photo img {
+    object-fit: contain;
+    border-radius: 50%;
+    background: var(--emerald-dark);
+  }
+  .profile h1 { margin: 0; color: #fff; font-size: 1.05rem; white-space: nowrap; }
+  .socials {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: auto;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    margin: 0;
+    padding-left: .5rem;
+    transform: translateX(calc(100vw + 700px));
+    animation: header-social-marquee 34s linear infinite;
+  }
+  .socials a { width: 30px; height: 30px; }
+  #navmenu {
+    position: absolute;
+    right: 4%;
+    bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .15rem;
+    flex-wrap: nowrap;
+  }
+  #navmenu a {
+    gap: .35rem;
+    margin: 0;
+    padding: .65rem .55rem;
+    color: #f2f6f3;
+    font-size: .78rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  main { margin-left: 0; padding-top: 132px; }
+  .nav-toggle { display: none; }
+}
+@keyframes header-info-marquee {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-100%); }
+}
+@keyframes header-social-marquee {
+  from { transform: translateX(calc(100vw + 700px)); }
+  to { transform: translateX(-100%); }
+}
 @media (max-width: 767px) {
   .hero { min-height: 88svh; padding: 5rem 0 3rem; }
   .hero .container { padding-inline: 1.25rem; }
