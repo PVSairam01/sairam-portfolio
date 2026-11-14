@@ -243,25 +243,35 @@ main{margin-left:300px}
   .socials a { width: 30px; height: 30px; }
   #navmenu {
     position: absolute;
-    right: 4%;
+    right: 0;
+    left: 0;
     bottom: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .15rem;
+    gap: .45rem;
     flex-wrap: nowrap;
+    width: 100%;
   }
   #navmenu a {
     gap: .35rem;
     margin: 0;
-    padding: .65rem .55rem;
+    padding: .65rem .6rem;
     color: #f2f6f3;
     font-size: .78rem;
     font-weight: 600;
     white-space: nowrap;
   }
   main { margin-left: 0; padding-top: 132px; }
+  main section[id] { scroll-margin-top: 132px; }
   .nav-toggle { display: none; }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #sidebar .avatar-upload .avatar, #sidebar .avatar { width: 48px; height: 48px; }
+  .profile { gap: .55rem; }
+  .profile h1 { font-size: .9rem; }
+  #navmenu { gap: .25rem; }
+  #navmenu a { gap: .3rem; padding: .55rem .4rem; font-size: .7rem; }
 }
 @keyframes header-info-marquee {
   from { transform: translateX(100vw); }
